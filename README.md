@@ -1,7 +1,7 @@
 About pydruid
 =============
 
-Home: http://pypi.python.org/pypi/pydruid/
+Home: https://github.com/druid-io/pydruid
 
 Package license: Apache 2.0
 
