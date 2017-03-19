@@ -20,11 +20,12 @@ requirements:
   build:
     - python
     - setuptools
-    - six >=1.9.0
 
   run:
     - python
     - six >=1.9.0
+    - pandas
+    - tornado
 
 test:
   imports:
@@ -32,9 +33,13 @@ test:
     - pydruid.utils
 
 about:
-  home: http://pypi.python.org/pypi/pydruid/
+  home: https://github.com/druid-io/pydruid
+  # license_file: Not in MANIFEST - see https://github.com/druid-io/pydruid/pull/77
   license: Apache 2.0
+  license_family: Apache
   summary: 'A Python connector for Druid.'
+  dev_url: https://github.com/druid-io/pydruid
+  doc_url: https://pythonhosted.org/pydruid/
 
 extra:
   recipe-maintainers:
