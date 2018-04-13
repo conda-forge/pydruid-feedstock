@@ -1,18 +1,20 @@
-{%set name = "pydruid" %}
-{%set version = "0.4.2" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "07ef6034a5066b2fa6aa745bb2beb00fdbfb59ece5b50b1dcc8124ca972d7ad8" %}
+{% set name = "pydruid" %}
+{% set version = "0.4.2" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "07ef6034a5066b2fa6aa745bb2beb00fdbfb59ece5b50b1dcc8124ca972d7ad8" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
@@ -25,8 +27,12 @@ requirements:
   run:
     - python
     - six >=1.9.0
+    - requests
     - pandas
     - tornado
+    - pygments
+    - prompt_toolkit
+    - tabulate
 
 test:
   imports:
@@ -35,7 +41,7 @@ test:
 
 about:
   home: https://github.com/druid-io/pydruid
-  # license_file: Not in MANIFEST - see https://github.com/druid-io/pydruid/pull/77
+  license_file: LICENSE
   license: Apache 2.0
   license_family: Apache
   summary: 'A Python connector for Druid.'
