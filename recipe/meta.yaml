@@ -1,7 +1,7 @@
 {%set name = "pydruid" %}
-{%set version = "0.3.1" %}
+{%set version = "0.4.1" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "a9016cee3dcfe98d7d6d98be1d710c6b055259a921ce2a9e896c73524cc5a30f" %}
+{%set hash_val = "25a03296fc2c30f55e755d7c132d4e7aa76c9136607a8631db900bf962f13940" %}
 
 package:
   name: {{ name }}
