@@ -14,9 +14,7 @@ Summary: A Python connector for Druid.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydruid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydruid-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydruid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydruid-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydruid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydruid-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pydruid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydruid-feedstock)
 
 Current release info
 ====================
