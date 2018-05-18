@@ -14,12 +14,15 @@ Summary: A Python connector for Druid.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pydruid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydruid-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pydruid-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pydruid-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydruid/badges/version.svg)](https://anaconda.org/conda-forge/pydruid)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydruid/badges/downloads.svg)](https://anaconda.org/conda-forge/pydruid)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pydruid-green.svg)](https://anaconda.org/conda-forge/pydruid) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pydruid.svg)](https://anaconda.org/conda-forge/pydruid) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pydruid.svg)](https://anaconda.org/conda-forge/pydruid) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pydruid.svg)](https://anaconda.org/conda-forge/pydruid) |
 
 Installing pydruid
 ==================
