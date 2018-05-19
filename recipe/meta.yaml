@@ -23,7 +23,7 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - pytest-runner
 
   run:
