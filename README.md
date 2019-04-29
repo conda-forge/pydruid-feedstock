@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pydruid
 =============
 
@@ -18,8 +14,17 @@ Summary: A Python connector for Druid.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pydruid-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pydruid-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3239&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pydruid-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
