@@ -1,8 +1,8 @@
 {% set name = "pydruid" %}
-{% set version = "0.5.6" %}
+{% set version = "0.5.7" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "cd19d847510105b251b0697770b6fc4750ca02267cce8afa486f94410a68d6a3" %}
+{% set hash_val = "88d4fa608c96969dc8f8e03cc0cfc4a38c4c3039b4f899db0af896ab0fa6ff23" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
   entry_points:
     - pydruid = pydruid.console:main
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
