@@ -1,8 +1,8 @@
 {% set name = "pydruid" %}
-{% set version = "0.5.7" %}
+{% set version = "0.5.8" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "88d4fa608c96969dc8f8e03cc0cfc4a38c4c3039b4f899db0af896ab0fa6ff23" %}
+{% set hash_val = "985c8e6dfcc197e37b54fbbd855beb5f13b392ab18849610c0ae910122bbfeab" %}
 
 package:
   name: {{ name|lower }}
