@@ -1,8 +1,7 @@
 {% set name = "pydruid" %}
-{% set version = "0.5.7" %}
+{% set version = "0.6.2" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "88d4fa608c96969dc8f8e03cc0cfc4a38c4c3039b4f899db0af896ab0fa6ff23" %}
+{% set hash_val = "e41bcb89d4ea704997d440910a604ba2e7df3eb1dcfc406e838961aba20af15a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +10,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   noarch: python
@@ -21,7 +20,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - pytest-runner
@@ -47,7 +46,7 @@ about:
   license_file: LICENSE
   license: Apache 2.0
   license_family: Apache
-  summary: 'A Python connector for Druid.'
+  summary: A Python connector for Druid.
   dev_url: https://github.com/druid-io/pydruid
   doc_url: https://pythonhosted.org/pydruid/
 
