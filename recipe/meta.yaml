@@ -1,33 +1,29 @@
 {% set name = "pydruid" %}
-{% set version = "0.5.7" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "88d4fa608c96969dc8f8e03cc0cfc4a38c4c3039b4f899db0af896ab0fa6ff23" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e41bcb89d4ea704997d440910a604ba2e7df3eb1dcfc406e838961aba20af15a
 
 build:
   noarch: python
   entry_points:
     - pydruid = pydruid.console:main
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.6
     - pip
     - pytest-runner
 
   run:
-    - python
+    - python >=3.6
     - six >=1.9.0
     - requests
     - pandas
@@ -41,11 +37,15 @@ test:
   imports:
     - pydruid
     - pydruid.utils
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: https://github.com/druid-io/pydruid
   license_file: LICENSE
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   summary: 'A Python connector for Druid.'
   dev_url: https://github.com/druid-io/pydruid
@@ -54,3 +54,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
