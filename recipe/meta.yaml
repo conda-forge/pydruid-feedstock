@@ -1,5 +1,5 @@
 {% set name = "pydruid" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1d12d5ea0c409c8df25d5282947be8d3fe315581035dd2417ea6e03f84e71f9
+  sha256: 30b6efa722234183239296bf8e6d41aba7eea0eec3d68233ce6c413986864fea
 
 build:
   noarch: python
