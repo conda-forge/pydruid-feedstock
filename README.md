@@ -1,11 +1,11 @@
-About pydruid
-=============
+About pydruid-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydruid-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/druid-io/pydruid
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydruid-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python connector for Druid.
 
