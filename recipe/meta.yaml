@@ -13,7 +13,7 @@ build:
   noarch: python
   entry_points:
     - pydruid = pydruid.console:main
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -30,7 +30,7 @@ requirements:
     - tornado
     - sqlalchemy
     - pygments
-    - prompt_toolkit <2.0.0
+    - prompt_toolkit >=2.0.0
     - tabulate
 
 test:
