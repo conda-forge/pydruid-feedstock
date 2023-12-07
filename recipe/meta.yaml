@@ -25,6 +25,7 @@ requirements:
     - requests
     - prompt_toolkit
     - pygments
+    - tabulate
 
 test:
   imports:
