@@ -23,9 +23,6 @@ requirements:
   run:
     - python >=3.6
     - requests
-    - prompt_toolkit
-    - pygments
-    - tabulate
 
 test:
   imports:
@@ -36,6 +33,10 @@ test:
     - pydruid --help
   requires:
     - pip
+    - prompt_toolkit
+    - sqlalchemy
+    - pygments
+    - tabulate
 
 about:
   home: https://github.com/druid-io/pydruid
