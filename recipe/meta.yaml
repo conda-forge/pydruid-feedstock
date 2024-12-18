@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pydruid-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pydruid-{{ version }}.tar.gz
   sha256: 63c41b33ab47fbb71cc25d3f3316cad78f18bfe947fa108862dd841d1f44fe49
 
 build:
@@ -14,14 +14,14 @@ build:
     - pydruid = pydruid.console:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - requests
 
 test:
@@ -36,6 +36,7 @@ test:
     - prompt_toolkit
     - pygments
     - tabulate
+    - python {{ python_min }}
 
 about:
   home: https://github.com/druid-io/pydruid
